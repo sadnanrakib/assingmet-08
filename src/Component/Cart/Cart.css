@@ -1,0 +1,25 @@
+.cart{
+    position: sticky;
+    top: 0;
+    padding: 30px 20px;
+}
+.btn-text{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.btn-text:hover{
+    background-color: orange;
+}
+.information{
+    border-radius: 8px;
+    background-color: antiquewhite;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+
+}
