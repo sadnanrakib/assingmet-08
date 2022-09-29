@@ -10,10 +10,10 @@ const Cart = ({cart}) => {
     return (
         <div className='cart'>
             <div className='img-info'>
-                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fwaterfront&psig=AOvVaw0GaAinuXCVzguoVup1E-_V&ust=1664500010349000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJDhrPXnuPoCFQAAAAAdAAAAABAD.jpg" alt="" />
+                
                 <div>
-                    <h6>Rakib Islam </h6>
-                    <p>Sydney, Australia</p>
+                    <h5>Rakib Islam </h5>
+                    <p>Khulna, Bangladesh</p>
                 </div>
                
             </div>
@@ -34,7 +34,20 @@ const Cart = ({cart}) => {
                 </div>
             {/* information End */}
 
-                <p>Exercise time: {cart.length}seconds</p>
+            {/* Add a Break Start */}
+            <h6>Add A Break</h6>
+                    <div className='btn'>
+                    
+                    <div className='rounded-circle'>10</div>
+                    <div>20</div>
+                    <div>30</div>
+                    <div>40</div>
+                    <div>50</div>
+                    </div>
+
+            {/* Add a Break End */}
+
+                {/* <p>Exercise time: {cart.length}seconds</p> */}
                 <h6>Exercise Details</h6>
                 <p>Exercise time :{total}seconds</p>
                 <p>Break time:{}</p>
