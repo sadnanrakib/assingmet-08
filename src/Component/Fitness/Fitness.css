@@ -27,3 +27,21 @@ border-radius: 20px;
     justify-content: space-around;
     margin-top: 5px;
 }
+@media only screen and (max-width: 425px) {
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+
+    }
+}
+@media only screen and (max-width: 425px) {
+    .gym-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 30px;
+
+
+    }
+}

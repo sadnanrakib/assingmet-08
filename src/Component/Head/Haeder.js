@@ -6,10 +6,11 @@ import'./Haeder.css';
 const Haeder = () => {
     return (
         <div>
+
           <div className='containers'>
           <div className='header'>
           <FontAwesomeIcon className='img' icon={faUserGear}></FontAwesomeIcon>
-          <h2 className=''>PRO-GYMNASIUM-CLUB</h2>
+          <h2>PRO-GYMNASIUM-CLUB</h2>
           </div>
           <nav>
             <a href="/home">Home</a>
@@ -17,6 +18,7 @@ const Haeder = () => {
             <a href="/about">About</a>
           </nav>
           </div>
+          <h3 className='select'>Select today’s exercise</h3>
         </div>
     );
 };
