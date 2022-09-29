@@ -22,7 +22,7 @@ const Cart = ({cart}) => {
                     <div>
                         <h6>60kg <br />Weight</h6>
                         {/* <small>Weight</small> */}
-                    </div>
+                    </div><br/> <br/>
                     <div>
                         <h6>5.6 <br />Height</h6>
                         {/* <small>Height</small> */}
