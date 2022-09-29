@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import'./Cart.css';
 
 const Cart = ({cart}) => {
+    const[selectedNumber, setSelectedNumber]=useState(0);
+console.log(selectedNumber);
+    const selectNumber=(numberSelected)=>{
+        setSelectedNumber(numberSelected.target.value);
+    }
     const diffToast=()=>{
         toast("Wow Your Activity Completed!");
     }
@@ -15,14 +20,13 @@ const Cart = ({cart}) => {
     }
     return (
         <div className='cart'>
-            <div className='img-info'>
-                
+                    
                 <div>
-                    <h5>Rakib Islam </h5>
+                    <h5>Md. Hedaytul Islam </h5>
                     <p>Khulna, Bangladesh</p>
                 </div>
                
-            </div>
+            
              {/* information  start*/}
                 <div className='information'>
                     <div>
@@ -42,22 +46,21 @@ const Cart = ({cart}) => {
 
             {/* Add a Break Start */}
             <h6>Add A Break</h6>
-                    <div className='btn'>
-                    
-                    <div className='rounded-circle'>10</div>
-                    <div>20</div>
-                    <div>30</div>
-                    <div>40</div>
-                    <div>50</div>
+                    <div className='add-break'>
+                    <button className='add-btn' onClick={selectNumber}value="10">10s</button>
+                    <button className='add-btn' onClick={selectNumber}value="20">20s</button>
+                    <button className='add-btn' onClick={selectNumber}value="30">30s</button>
+                    <button className='add-btn' onClick={selectNumber}value="40">40s</button>
+                    <button className='add-btn' onClick={selectNumber}value="50">50s</button>
                     </div>
 
             {/* Add a Break End */}
 
                 {/* <p>Exercise time: {cart.length}seconds</p> */}
                 <h6>Exercise Details</h6>
-                <p>Exercise time :{total} seconds</p>
-                <p>Break time:{}</p>
-                <button onClick={diffToast} className='btn-text'>Activity Completed</button>
+                <p className='exercise-time'>Exercise time : {total} seconds</p>
+                <p className='break-time'>Break time: {selectedNumber} seconds</p>
+                <button onClick={diffToast} className='btn-toast'>Activity Completed</button>
                 <ToastContainer />
                 
         </div>

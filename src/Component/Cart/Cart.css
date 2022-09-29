@@ -3,14 +3,14 @@
     top: 0;
     padding: 30px 20px;
 }
-.btn-text{
+.btn-toast{
     border: 1px solid cornflowerblue;
     padding: 10px;
     border-radius: 10px;
     
 }
-.btn-text:hover{
-    background-color: orange;
+.btn-toast:hover{
+    background-color:indianred;
 }
 .information{
     border-radius: 8px;
@@ -25,8 +25,35 @@
 
 }
 
-.btn{
-    display: flex;
-    gap: 10px;
+
+.add-break{
     
+    background-color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px gray ;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
 }
+.add-btn{
+    border: none;
+    border: 1px solid gray;
+    border-radius:50px;
+}
+
+.exercise-time{
+    background-color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px gray ;
+    border: none;
+    padding: 10px; 
+}
+
+.break-time{
+    background-color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px gray ;
+    border: none;
+    padding: 10px; 
+}
+
