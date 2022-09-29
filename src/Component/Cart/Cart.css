@@ -4,7 +4,7 @@
     padding: 30px 20px;
 }
 .btn-text{
-    border: none;
+    border: 1px solid cornflowerblue;
     padding: 10px;
     border-radius: 10px;
     

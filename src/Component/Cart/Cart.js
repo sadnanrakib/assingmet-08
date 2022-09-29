@@ -1,8 +1,14 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import'./Cart.css';
 
 const Cart = ({cart}) => {
+    const diffToast=()=>{
+        toast("Wow Your Activity Completed!");
+    }
     let total=0;
+    
     for(const product of cart){
         total=total + parseFloat(product.timeRequired);
         
@@ -49,9 +55,10 @@ const Cart = ({cart}) => {
 
                 {/* <p>Exercise time: {cart.length}seconds</p> */}
                 <h6>Exercise Details</h6>
-                <p>Exercise time :{total}seconds</p>
+                <p>Exercise time :{total} seconds</p>
                 <p>Break time:{}</p>
-                <button className='btn-text'>Activity Completed</button>
+                <button onClick={diffToast} className='btn-text'>Activity Completed</button>
+                <ToastContainer />
                 
         </div>
     );
