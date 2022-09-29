@@ -9,7 +9,7 @@ const Haeder = () => {
           <div className='containers'>
           <div className='header'>
           <FontAwesomeIcon className='img' icon={faUserGear}></FontAwesomeIcon>
-          <h2 className=''>UTRA-ACTIVE-CLUB</h2>
+          <h2 className=''>PRO-GYMNASIUM-CLUB</h2>
           </div>
           <nav>
             <a href="/home">Home</a>
