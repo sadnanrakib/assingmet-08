@@ -1,0 +1,10 @@
+.Question{
+    
+    margin-left: 50px;
+    
+    margin-top: 20px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px gray ;
+    padding: 20px;
+}

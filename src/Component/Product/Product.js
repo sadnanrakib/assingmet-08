@@ -16,6 +16,7 @@ const Product = (props) => {
                 <p className='btn-text'>Add to list</p>
                 </button>
         </div>
+        
     );
 };
 
